@@ -14,7 +14,7 @@ public class InventoryClickListener implements Listener {
         this.rewardManager = rewardManager;
     }
 
-    @EventHandler (ignoreCancelled = true)
+    @EventHandler
     public void onMenuClick(final InventoryClickEvent event){
         if (event.getInventory().getHolder() instanceof Rewards){
             if (event.getCurrentItem() == null) return;
